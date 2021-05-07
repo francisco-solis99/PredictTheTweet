@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict the Tweet</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="predict__header">
+            <h1 class="predict__title">Predict the tweet</h1>
+        </header>
+
+        <main class="hero">
+            <div class="predict__controls">
+                <input type="text" class="predict__text" id="sampleText" required>
+                <div class="predict__actions">
+                    <button class="predict__button" id="executePrediction">
+                        <span class="circle" aria-hidden="true">
+                            <span class="arrow"></span>
+                        </span>
+                        <span class="predict__button-text">Predict the Tweet</span>
+                    </button>
+                    <button class="predict__button predict__clear" id="clear">
+                        <span class="circle" aria-hidden="true">
+                            <span class="arrow"></span>
+                        </span>
+                        <span class="predict__button-text">Clear all the fields</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <hr> -->
+            <div class="predict__result" id="WrapperResult">
+                <figure class="predict__image-content">
+                    <img src="" alt="Profile Twitter image" class="predict__image" id="profileImage">
+                </figure>
+                <p class="predict__out" id="result"></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__author">By Francisco Javier Solis Martinez with &#128150</p>
+        </footer>
+    </div>
+
+
+    <script src="//unpkg.com/brain.js"></script>
+    <script src="./app.js" type="module" defer></script>
+</body>
+
+</html>
